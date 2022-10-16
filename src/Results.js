@@ -3,7 +3,7 @@ import Meaning from "./Meaning";
 
 function Results(props) {
   if (props.result == null) {
-    return <div>Hello Error</div>;
+    return null;
   } else {
     return (
       <div>
