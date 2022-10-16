@@ -11,6 +11,7 @@ function Dictionary() {
   function submit(event) {
     event.preventDefault();
 
+    // documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${key}`;
     axios.get(apiUrl).then(handleResponse);
   }
