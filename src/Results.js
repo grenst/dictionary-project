@@ -2,8 +2,6 @@ import React from "react";
 import Meaning from "./Meaning";
 
 function Results(props) {
-  console.log(props.result);
-
   if (props.result == null) {
     return <div>Hello Error</div>;
   } else {
