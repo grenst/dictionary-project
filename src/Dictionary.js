@@ -27,7 +27,7 @@ function Dictionary() {
       <form className="row gap-2 mx-3 p-3 rounded-2 shadow bg-light">
         <input
           type="search"
-          className="col-8 w-75 form-control"
+          className="col-8 form-control w-75 d-sm-block"
           onChange={handleChangeKey}
           placeholder="input the word"
         />
