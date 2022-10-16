@@ -1,15 +1,21 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 function Dictionary() {
   const [key, setKey] = useState();
 
+  function handleResponse(response) {
+    console.log(response.data[0]);
+  }
+
   function submit(event) {
     event.preventDefault();
-    alert(`Hello there ${key}`);
+
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${key}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleChangeKey(e) {
-    console.log(e.target.value);
     setKey(e.target.value);
   }
 
