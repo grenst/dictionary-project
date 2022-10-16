@@ -1,15 +1,15 @@
 import logo from "./logo.png";
 import "./App.css";
+import Dictionary from "./Dictionary";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App text-center">
       <header className="App-header text-center display-2">
-        <a href="/" className="text-success text-decoration-none">
-          TEST Hello
-        </a>
         <img src={logo} className="App-logo img-fluid" alt="logo" />
       </header>
+      <Dictionary />
+      <footer className="text-center h6 mt-5">coded by Makarova Olena</footer>
     </div>
   );
 }
