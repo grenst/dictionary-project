@@ -24,9 +24,14 @@ function Dictionary() {
 
   return (
     <div>
-      <form>
-        <input type="search" className="inputGroup-sizing-sm" onChange={handleChangeKey} />
-        <input type="submit" value="Search" onClick={submit} />
+      <form className="row gap-2 mx-3 p-3 rounded-2 shadow bg-light">
+        <input
+          type="search"
+          className="col-8 w-75 form-control"
+          onChange={handleChangeKey}
+          placeholder="input the word"
+        />
+        <input type="submit" className="btn btn-primary col" value="Search" onClick={submit} />
       </form>
       <Results result={results} />
     </div>

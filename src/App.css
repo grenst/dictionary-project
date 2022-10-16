@@ -1,3 +1,9 @@
+* {
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .App-header {
   margin: 30px 0;
 }
