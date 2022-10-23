@@ -11,7 +11,7 @@ function Meaning(props) {
             <div>
               {info.definitions.map(function (defin, index) {
                 return (
-                  <div>
+                  <div key={index}>
                     <strong>Definition: </strong>
                     {defin.definition}
                     <br />
@@ -22,6 +22,7 @@ function Meaning(props) {
                 );
               })}
             </div>
+            <br />
           </div>
         );
       })}
