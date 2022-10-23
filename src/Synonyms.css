@@ -1,0 +1,14 @@
+ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 15px;
+}
+
+ul {
+  margin-top: 25px;
+  padding: 0;
+}
+
+.results {
+  color: red;
+}
